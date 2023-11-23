@@ -1,0 +1,29 @@
+{
+  "name": "eliasnoya/tuples-project",
+  "description": "Project Template for eliasnoya/tuples-framework",
+  "type": "project",
+  "require": {
+    "eliasnoya/tuples-framework": "^1.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Elias Noya",
+      "email": "eliasnoya@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "scripts": {
+    "create-project": "php -r \"echo 'Creating tuples-framework template project';\"",
+    "post-create-project-cmd": [
+      "composer install",
+      "php -r \"copy('.env.example', '.env');\"",
+      "./vendor/bin/rr get-binary"
+    ]
+  }
+}
