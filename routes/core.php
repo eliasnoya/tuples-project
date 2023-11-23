@@ -1,10 +1,11 @@
 <?php
 
+use Src\Index\Infrastructure\IndexController;
 use Tuples\Http\Route;
 use Tuples\Http\RouteGroup;
 
 return [
 
-    // Route::get("/", [YourController::class, 'YourMethod']),
+    Route::get("/", [IndexController::class, 'index']),
 
 ];

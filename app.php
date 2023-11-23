@@ -15,9 +15,6 @@ $app = new App();
 // Depedenencies: Router, RouteResolver, Request, Response, ExceptionHandler
 $app->defaults();
 
-// Your dependencies
-$app->bindDependencies(include_once 'depedencies/core.php');
-
 $app->use(\Tuples\Http\Middleware\Cors::class);
 $app->use(\Tuples\Http\Middleware\Helmet::class);
 
@@ -26,6 +23,9 @@ $app->useDefaultDatabase(env('DEFAULT_DB_DSN'), env('DEFAULT_DB_USER'), env('DEF
 
 // Add another database by using the first parameter $connName to differentiate it from the "default" connection
 // $app->useDatabase("secondary", "...", "...", "...", []);
+
+// Your dependencies
+$app->bindDependencies(include_once 'depedencies/core.php');
 
 // Add routes from a file that returns an array with Route and RouteGroup instances
 $app->routes(include_once 'routes/core.php');

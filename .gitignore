@@ -2,4 +2,5 @@
 /rr.exe
 /rr
 /.rr.yaml
-/.env
+/storage
+/bootstraped.keep

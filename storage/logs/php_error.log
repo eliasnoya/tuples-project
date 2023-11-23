@@ -1,0 +1,16 @@
+[23-Nov-2023 16:11:49 UTC] PHP Fatal error:  Uncaught Error: Invalid Action. Class Src\Index\Infrastructure\IndexController doesnt exists in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php:163
+Stack trace:
+#0 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(33): Tuples\Http\Route->setAction()
+#1 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(214): Tuples\Http\Route->__construct()
+#2 C:\Projects\tuples-project\routes\core.php(9): Tuples\Http\Route::get()
+#3 C:\Projects\tuples-project\app.php(31): include_once('...')
+#4 {main}
+  thrown in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php on line 163
+[23-Nov-2023 16:11:49 UTC] PHP Fatal error:  Uncaught Error: Invalid Action. Class Src\Index\Infrastructure\IndexController doesnt exists in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php:163
+Stack trace:
+#0 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(33): Tuples\Http\Route->setAction()
+#1 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(214): Tuples\Http\Route->__construct()
+#2 C:\Projects\tuples-project\routes\core.php(9): Tuples\Http\Route::get()
+#3 C:\Projects\tuples-project\app.php(31): include_once('...')
+#4 {main}
+  thrown in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php on line 163
