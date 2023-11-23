@@ -3,4 +3,6 @@
 /rr
 /.rr.yaml
 /storage
+/storage/logs
+/storage/sessions
 /bootstraped.keep
