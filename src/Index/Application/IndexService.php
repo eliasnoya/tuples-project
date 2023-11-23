@@ -2,13 +2,15 @@
 
 namespace Src\Index\Application;
 
-use Src\Domain\Index;
-use Src\Domain\ValueObject\Welcome;
-
+/**
+ * Example Use Case:
+ * Register this dependency in /dependencies/core.php (or another file set in the App)
+ * to inject it into controllers or any infrastructure layer objects.
+ */
 class IndexService
 {
-    public function execute(string $message): Index
+    public function execute(string $message): string
     {
-        return new Index(new Welcome($message));
+        return "Welcome to TuplesFramework, $message";
     }
 }

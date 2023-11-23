@@ -1,16 +1,111 @@
-[23-Nov-2023 16:11:49 UTC] PHP Fatal error:  Uncaught Error: Invalid Action. Class Src\Index\Infrastructure\IndexController doesnt exists in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php:163
-Stack trace:
-#0 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(33): Tuples\Http\Route->setAction()
-#1 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(214): Tuples\Http\Route->__construct()
-#2 C:\Projects\tuples-project\routes\core.php(9): Tuples\Http\Route::get()
-#3 C:\Projects\tuples-project\app.php(31): include_once('...')
-#4 {main}
-  thrown in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php on line 163
-[23-Nov-2023 16:11:49 UTC] PHP Fatal error:  Uncaught Error: Invalid Action. Class Src\Index\Infrastructure\IndexController doesnt exists in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php:163
-Stack trace:
-#0 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(33): Tuples\Http\Route->setAction()
-#1 C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php(214): Tuples\Http\Route->__construct()
-#2 C:\Projects\tuples-project\routes\core.php(9): Tuples\Http\Route::get()
-#3 C:\Projects\tuples-project\app.php(31): include_once('...')
-#4 {main}
-  thrown in C:\Projects\tuples-project\vendor\eliasnoya\tuples-framework\src\Http\Route.php on line 163
+Tuples\Integration\RouteResolver
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => router
+        )
+
+    [1] => ReflectionParameter Object
+        (
+            [name] => request
+        )
+
+    [2] => ReflectionParameter Object
+        (
+            [name] => response
+        )
+
+)
+Tuples\Http\Middleware\Cors
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => req
+        )
+
+    [1] => ReflectionParameter Object
+        (
+            [name] => res
+        )
+
+)
+Tuples\Http\Middleware\Cors
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => next
+        )
+
+)
+Tuples\Http\Middleware\Helmet
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => req
+        )
+
+    [1] => ReflectionParameter Object
+        (
+            [name] => res
+        )
+
+)
+Tuples\Http\Middleware\Helmet
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => next
+        )
+
+)
+Src\Index\Infrastructure\IndexController
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => req
+        )
+
+    [1] => ReflectionParameter Object
+        (
+            [name] => res
+        )
+
+    [2] => ReflectionParameter Object
+        (
+            [name] => dbPool
+        )
+
+)
+Tuples\Database\DatabasePool
+Array
+(
+)
+ExceptionHandler
+Array
+(
+    [0] => ReflectionParameter Object
+        (
+            [name] => error
+        )
+
+    [1] => ReflectionParameter Object
+        (
+            [name] => request
+        )
+
+    [2] => ReflectionParameter Object
+        (
+            [name] => response
+        )
+
+)
+Tuples\Database\DatabasePool
+Array
+(
+)

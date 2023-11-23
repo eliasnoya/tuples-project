@@ -25,7 +25,7 @@ $app->useDefaultDatabase(env('DEFAULT_DB_DSN'), env('DEFAULT_DB_USER'), env('DEF
 // $app->useDatabase("secondary", "...", "...", "...", []);
 
 // Your dependencies
-$app->bindDependencies(include_once 'depedencies/core.php');
+$app->bindDependencies(include_once 'dependencies/core.php');
 
 // Add routes from a file that returns an array with Route and RouteGroup instances
 $app->routes(include_once 'routes/core.php');
