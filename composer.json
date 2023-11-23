@@ -22,7 +22,6 @@
     "create-project": "php -r \"echo 'Creating tuples-framework template project';\"",
     "post-create-project-cmd": [
       "composer install",
-      "php -r \"copy('.env.example', '.env');\"",
       "./vendor/bin/rr get-binary"
     ]
   }
