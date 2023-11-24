@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d760f811e9a2da957136e1452baf2b1b",
+    "content-hash": "237ba4ae19a50ae62963db0ebdcf09fc",
     "packages": [
         {
             "name": "composer/semver",
@@ -89,16 +89,16 @@
         },
         {
             "name": "eliasnoya/tuples-framework",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eliasnoya/tuples-framework.git",
-                "reference": "458d676122d9daeedcd6b44df10f3248a0f0ab5b"
+                "reference": "98f7dcab1a707559bbb5fdcdffd42366398178bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eliasnoya/tuples-framework/zipball/458d676122d9daeedcd6b44df10f3248a0f0ab5b",
-                "reference": "458d676122d9daeedcd6b44df10f3248a0f0ab5b",
+                "url": "https://api.github.com/repos/eliasnoya/tuples-framework/zipball/98f7dcab1a707559bbb5fdcdffd42366398178bf",
+                "reference": "98f7dcab1a707559bbb5fdcdffd42366398178bf",
                 "shasum": ""
             },
             "require": {
@@ -132,9 +132,9 @@
             "description": "Lightweight PHP framework optimized for minimal resource consumption, specifically designed for seamless integration with the RoadRunner HTTP Server.",
             "support": {
                 "issues": "https://github.com/eliasnoya/tuples-framework/issues",
-                "source": "https://github.com/eliasnoya/tuples-framework/tree/1.0.2"
+                "source": "https://github.com/eliasnoya/tuples-framework/tree/1.0.3"
             },
-            "time": "2023-11-23T15:22:59+00:00"
+            "time": "2023-11-23T23:52:46+00:00"
         },
         {
             "name": "graham-campbell/result-type",
