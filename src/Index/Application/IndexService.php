@@ -11,6 +11,9 @@ class IndexService
 {
     public function execute(string $message): string
     {
-        return "Welcome to TuplesFramework, $message";
+        return view('index.html.twig', [
+            'title' => 'Tuples Framework',
+            'message' => $message
+        ]);
     }
 }

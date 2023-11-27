@@ -15,7 +15,7 @@ class IndexController extends Controller
 
     public function index(IndexService $service)
     {
-        $message = $this->req->query("message", "we are happy to have you here");
+        $message = $this->req->query("message", "Hello World");
 
         return $service->execute($message);
     }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exception</title>
+
+    <style>
+      body {
+        padding: 20px;
+        font-family: sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+      .error-container {
+        width: 1024px;
+        margin:auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+    <h2>{{ code }} Error: {{ message }}</h2>
+
+    {% if trace is not empty %} 
+    <b>Trace</b>
+    <br/>
+    <span style="font-size:11px;">
+      {% for t in trace %} 
+      
+        {% if(t.line) %}
+        Line: {{ t.line }}, 
+        {% endif %}
+
+        {% if(t.class) %}
+        Class: {{ t.class }}, 
+        {% endif %}
+
+        {% if(t.function) %}
+        Function: {{ t.function }} 
+        {% endif %}
+
+        {% if(t.file) %}
+        (File: {{ t.file }}) 
+        {% endif %}
+
+        <br />
+      {% endfor %}
+      </span>
+    {% endif %}
+    </div>
+  </body>
+</html>
