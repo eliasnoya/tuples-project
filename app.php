@@ -4,7 +4,6 @@ use Tuples\Integration\App;
 
 require_once 'vendor/autoload.php';
 
-
 /**
  * Initializes the App, this one is designed for roadrunner Worker.
  * It creates an instance of Container along with Tuples\Request and Tuples\Response during startup.
@@ -24,11 +23,13 @@ $app->useDefaultDatabase(env('DEFAULT_DB_DSN'), env('DEFAULT_DB_USER'), env('DEF
 // Add another database by using the first parameter $connName to differentiate it from the "default" connection
 // $app->useDatabase("secondary", "...", "...", "...", []);
 
-// Your dependencies
-$app->bindDependencies(include_once 'dependencies/core.php');
+// Your dependencies by file-array
+$app->bindDependencies(include_once 'config/dependencies.php');
+// or 1 by 1
+// $app->callable(\Src\Index\Application\IndexService::class, \Src\Index\Application\IndexService::class);
 
 // Add routes from a file that returns an array with Route and RouteGroup instances
-$app->routes(include_once 'routes/core.php');
+$app->routes(include_once 'config/routes.php');
 
 // Add a single Route or RouteGroup instance to the router if needed
 // $app->route(Route::get("/", [Controller::class, 'index']));
